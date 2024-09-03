@@ -45,6 +45,12 @@ app.get('/orders', (req: Request, res: Response) => {
     res.send('List of orders');
 });
 
+// perbaikan order
+app.get('/order', (req: Request, res: Response) => {
+    // Logika untuk mendapatkan semua order
+    res.send('Perbaikan List of orders');
+});
+
 
 app.listen(port, () => {
     console.log(`Server running on port ${port}`);
