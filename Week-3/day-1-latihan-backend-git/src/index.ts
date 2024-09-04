@@ -19,6 +19,7 @@ app.post('/login', (req: Request, res: Response) => {
     res.send('User logged in');
 });
 
+
 // Endpoint untuk menambah produk
 app.post('/products', (req: Request, res: Response) => {
     const { name, price } = req.body;
